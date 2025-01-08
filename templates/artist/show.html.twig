@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ artist.firstname }} {{ artist.lastname }}</h1>
+    
+    <nav><a href="{{ path('app_artist_index') }}">Retour à l'index</a></nav>
+{% endblock %}
